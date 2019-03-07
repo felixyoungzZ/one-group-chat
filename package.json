@@ -1,7 +1,7 @@
 {
   "name": "one-group-chat",
   "version": "0.0.1",
-  "description": "a mini char room built with react and websocket",
+  "description": "A mini char room built with react and websocket",
   "main": "index.js",
   "scripts": {
     "lint": "tslint --project ./tsconfig.json",
