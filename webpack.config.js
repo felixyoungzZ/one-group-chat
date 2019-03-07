@@ -17,6 +17,19 @@ module.exports = {
         loader: 'ts-loader',
       },
       {
+        enforce: 'pre',
+        test: /\.(ts|tsx)?$/,
+        use: [
+          {
+            loader: 'tslint-loader',
+            options: {
+              emitErrors: true,
+            }
+          }
+        ],
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(png|jpg|gif)$/,
         use: [
           {
