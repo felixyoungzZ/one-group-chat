@@ -59,6 +59,9 @@ module.exports = {
             options: {
               plugins: (loader) => [
                 require('postcss-preset-env')(),
+                require('autoprefixer')({
+                  'browsers': ['> 1%', 'last 2 versions'],
+                }),
               ]
             },
           },
