@@ -2,7 +2,12 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import './style.less';
 
+import { StoreProvider } from './store';
+import { App } from './App';
+
 ReactDOM.render(
-  <div>Hello World</div>,
+  <StoreProvider>
+    <App />
+  </StoreProvider>,
   document.getElementById('app'),
 );
