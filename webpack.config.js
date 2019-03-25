@@ -5,8 +5,8 @@ module.exports = {
   mode:"development",
   entry: path.join(__dirname, './src/index'), 
   output: {
-      filename: '[hash].bundle.js',
-      path: path.resolve(__dirname, './dist')
+    filename: '[hash].bundle.js',
+    path: path.resolve(__dirname, './dist'),
   },
   devtool: 'inline-source-map',
   module:{
